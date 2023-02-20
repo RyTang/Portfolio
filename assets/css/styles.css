@@ -164,7 +164,6 @@ nav ul li {
 .more-about-row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .about-col-1 {
@@ -536,6 +535,17 @@ footer {
         padding: 1rem 3.5rem;
     }
 
+    .more-about-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-col-2 img {
+        height: 30rem;
+        width: 20rem;
+        border-radius: 0.5rem;
+    }
+
     
     .more-about h2 {
         text-align: center;
@@ -572,6 +582,10 @@ footer {
 
     .bio {
         width: 18.3rem;
+    }
+    
+    .more-about img {
+
     }
 
     .project-container {
