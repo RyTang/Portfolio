@@ -347,7 +347,8 @@ nav ul li {
 
 .project-container p {
     padding: 0.4rem;
-    font-weight: 550;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .project-title {
@@ -580,7 +581,7 @@ footer {
 
     .project-container {
         width: 20.875rem;
-        height: 28rem;
+        height: fit-content;
     }
 
     .resume {
