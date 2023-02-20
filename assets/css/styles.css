@@ -554,6 +554,16 @@ footer {
         width: 20.875rem;
         height: 28rem;
     }
+
+    .resume {
+        color: var(--primary-color);
+        max-width: 68.75rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 1rem;
+        width: 20.875rem;
+        height: 28rem;
+    }
 }
 
 @media screen and (max-width: 420px) {
