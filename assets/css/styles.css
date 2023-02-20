@@ -547,9 +547,10 @@ footer {
         margin: auto;
     }
 
-    /* .about-col-1 {
-        margin: auto;
-    }  */
+    .about-col-1 {
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
 
     .about-col-2 img {
         margin-top: 2rem;
