@@ -543,8 +543,6 @@ footer {
 
     .more-about-row {
         flex-direction: column;
-        align-items: center;
-        margin: auto;
     }
 
     .about-col-1 {
