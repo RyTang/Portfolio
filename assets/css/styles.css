@@ -149,9 +149,6 @@ nav ul li {
 
 .more-about {
     margin-top: 4rem;
-    max-width: 70rem;
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--bg-secondary-color);
     padding: 1rem 6rem;
 }
@@ -164,7 +161,10 @@ nav ul li {
 
 .more-about-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    max-width: 70rem;
+    margin: auto;
 }
 
 .about-col-1 {
@@ -538,23 +538,30 @@ footer {
 
     .more-about {
         margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
         margin: auto;
     }
 
     .more-about-row {
         flex-direction: column;
+        
     }
 
-    .about-col-1 {
-        margin-left: 10%;
-        margin-right: 10%;
-    } 
 
     .about-col-2 img {
         margin-top: 2rem;
-        height: 30rem;
-        width: 20rem;
+        height: 25rem;
+        width: 15rem;
         border-radius: 0.5rem;
+    }
+
+    .tab-links {
+        margin-right: auto;
+        font-size: 1.15rem;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
     }
 
     
@@ -588,7 +595,7 @@ footer {
 @media screen and (max-width: 420px) {
     nav h1 {
         color: var(--bg-primary-color);
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .hero img {
@@ -604,12 +611,22 @@ footer {
         width: 17.875rem;
     }
 
+    .more-about {
+        width: 18.3rem;
+        padding: 0;
+        justify-content: center;
+    }
+
     .about-col-1 {
         margin: auto;
     } 
 
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+    }
+
+    .about-col-2 img {
+        align-items: center;
     }
 
     .about-col-2{
