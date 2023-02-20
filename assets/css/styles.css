@@ -441,6 +441,11 @@ footer {
         background-color: var(--primary-color);
     }
 
+    nav h1 {
+        color: var(--bg-primary-color);
+        font-size: 1.2rem;
+    }
+
     #burger-menu {
         display: flex;
     }
@@ -541,6 +546,10 @@ footer {
         align-items: center;
     }
 
+    .about-col-1 {
+        margin: auto;
+    } 
+
     .about-col-2 img {
         margin-top: 2rem;
         height: 30rem;
@@ -584,10 +593,6 @@ footer {
 
     .bio {
         width: 18.3rem;
-    }
-    
-    .more-about img {
-
     }
 
     .project-container {
