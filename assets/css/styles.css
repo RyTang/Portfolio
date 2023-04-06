@@ -198,15 +198,17 @@ nav ul li {
     content: '';
     width: 0;
     height: 0.1875rem;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     position: absolute;
     left: 0;
     bottom: -0.5rem;
     transition: 0.5s;
+    width: 0%;
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 60%;
+    background: var(--primary-color);
 }
 
 .tab-contents ul li{
@@ -546,11 +548,15 @@ footer {
 
     .more-about-row {
         flex-direction: column;
-        
+        position: relative;
     }
 
     .tab-titles {
-        display: flexbox;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: 700;
+        font-style: italic;
     }
 
     .about-col-2 img {
