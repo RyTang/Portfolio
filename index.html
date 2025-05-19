@@ -11,6 +11,9 @@
 
     <!-- Favicons -->
     <link rel="icon" href="assets/icons/tab-icon.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <!-- Animate CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -19,52 +22,47 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="nav-container">
-        <h1>Ryan Tang | Data Analyst/Scientist </h1>
         <div class="container">
+            <h1>Ryan Tang | Data Scientist</h1>
             <input class="checkbox" type="checkbox" name="burger-menu" id="burger-menu" />
-            <div class="hamburger-lines">
+            <label for="burger-menu" class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
-            </div>
+            </label>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#my-skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resumé</a></li>
+            </ul>
         </div>
-
-        <ul class="navigation menu-items">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#my-skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#resume" class="nav-link">Resumé</a></li>
-        </ul>
-
     </nav>
 
-    <!-- Hero Section -->
-
     <section class="hero" id="about">
-        <img src="assets/images/Playing Background.gif" alt="Ryan Tang" loading="lazy" class="hero-img" />
-        <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-title">About Me</h2>
-            <p class="bio-text">
-                Hi, I'm Ryan Tang from Malaysia. A Fresh Graduate from Monash University of Computer Science in Data
-                Science. Coming from a Data background, I am always keen in finding ways to express information in a way
-                that is easily understandable to the audience. This extends not only to my data projects but as well to
-                teaching the fundamental concepts of Object-Oriented Programming in my part-time tutoring.
-
-            </p>
-            <p class="bio-text">
-                <em>Feel free to look at my projects below and get to know me.</em>
-            </p>
+        <div class="container">
+            <img src="assets/images/Playing Background.gif" alt="Ryan Tang" class="hero-image" style="width: 100%; height: auto;">
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">About Me</h2>
+                <p class="bio-text">
+                    Hi, I'm Ryan Tang, an experienced Data Scientist from Malaysia. I graduated from Monash University, taking a Bachelor's Degree of Computer Science in Data
+                    Science. Coming from a Data background, I am always keen on finding ways to express information in a
+                    way that is easily understandable to the audience. This extends not only to my data projects but as well
+                    to teaching the fundamental concepts of Object-Oriented Programming in my part-time tutoring.
+                </p>
+                <p class="bio-text">
+                    <em>Feel free to look at my projects below and get to know me.</em>
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- More about -->
     <section class="more-about">
-        <div class="more-about-container">
+        <div class="container">
+            <h2>More About Me</h2>
             <div class="more-about-row">
                 <div class="about-col-1">
-                    <h2>More About Me</h2>
                     <div class="tab-titles">
                         <h3 class="tab-links active-link" onclick="opentab('skills')">Skills</h3>
                         <h3 class="tab-links" onclick="opentab('experience')">Experience</h3>
@@ -76,169 +74,173 @@
                             <li><span>Programming Languages</span><br>Python, Java, C#, HTML & CSS</li>
                             <li><span>Machine Learning Models</span><br>Using R, Python and Matlab</li>
                             <li><span>Data Visualisation</span><br>Python (Pandas), R, Tableau and Vega</li>
-                            <li><span>Database Management</span><br>SQL, RDBMS Design, NoSQL and MongoDB</li>
+                            <li><span>Database Management</span><br>PySpark, SQL, RDBMS Design, NoSQL and MongoDB</li>
                             <li><span>Game Development</span><br>Unity and C#</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022-08 - 2022-11</span><br><em>Selangor, Malaysia</em><br>Tutor Assistant at Monash University<br>Module: Object Oriented Design and Implementation</li>
-                            <li><span>2021-11 - 2022-02</span><br><em>Kuala Lumpur, Malaysia</em><br>Data Analyst Intern at Setel</li>
+                            <li><span>2022-08 - 2022-11</span><br><em>Selangor, Malaysia</em><br>Tutor Assistant at
+                                Monash
+                                University<br>Module: Object Oriented Design and Implementation</li>
+                            <li><span>2021-11 - 2022-02</span><br><em>Kuala Lumpur, Malaysia</em><br>Data Analyst Intern
+                                at
+                                Setel</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2020-2022</span><br><em>Monash University</em> <br>Bachelors of Computer Science in Data Science <br>GPA: 3.83/4.00</li>
-                            <li><span>2018-2019</span><br><em>Sunway College</em><br>Cambridge Advanced Level<br>GPA: 4.00/4.00</li>
+                            <li><span>2020-2022</span><br><em>Monash University</em> <br>Bachelors of Computer Science
+                                in
+                                Data Science <br>GPA: 3.83/4.00</li>
+                            <li><span>2018-2019</span><br><em>Sunway College</em><br>Cambridge Advanced Level<br>GPA:
+                                4.00/4.00</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="certificate">
                         <ul>
-                            <li><span>2023</span><br><em>Google Data Analytics Certificate</em><br>Coursera<br><a href="https://www.credly.com/badges/47bf56e0-445c-4caf-be8c-2632d099e5ce/public_url" target="_blank">View Certificate</a></li>
+                            <li><span>2025</span><br><em>AWS Solutions Architect - Associate</em><br>Amazon Web Services (AWS)<br><a
+                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential/311f11dbf1594d0c945b9684c61b0410" target="_blank">View
+                                    Certificate</a></li>
+                            <li><span>2023</span><br><em>Google Data Analytics Certificate</em><br>Coursera<br><a
+                                    href="https://www.credly.com/badges/47bf56e0-445c-4caf-be8c-2632d099e5ce/public_url"
+                                    target="_blank">View Certificate</a></li>
                             <li><br>More Certificates Coming Soon!<Br> in Progress to catch them all...</li>
                         </ul>
                     </div>
                 </div>
                 <div class="about-col-2">
-                    <img src="assets/images/about-me.jpg" alt="Ryan Tang" loading="lazy" />
+                    <img src="assets/images/about-me.jpg" alt="Ryan Tang">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills section -->
     <section class="my-skills" id="my-skills">
-        <h2 class="skill-header">My Top Skills</h2>
-        <div class="skills-wrapper animate__animated animate__pulse">
-            <div class="flip-card icon-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/icons/icon-python.png" alt="Python" loading="lazy" class="icon" />
-                    </div>
-                    <div class="flip-card-back flip-card-text">
-                        <h1>Python</h1>
-                        <h4>Programming + Pandas</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card icon-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/icons/icon-sql.png" alt="SQL" loading="lazy" class="icon" />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>SQL</h1>
-                        <h4>Relational Database Design + Window Functions</h4>
+        <div class="container">
+            <h2>My Top Skills</h2>
+            <div class="skills-wrapper animate__animated animate__pulse">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/icons/icon-python.png" alt="Python">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Python</h3>
+                            <p>OOP, Pandas, Polars, Pyspark, Data Pipeline</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flip-card icon-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/icons/icon-java.png" alt="Java" loading="lazy" class="icon" />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Java</h1>
-                        <h4>Object Oriented Programming</h4>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="skills-wrapper animate__animated animate__pulse">
-            <div class="flip-card icon-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/icons/icon-tableau.png" alt="Tableau" loading="lazy" class="icon" />
-                    </div>
-                    <div class="flip-card-back flip-card-text">
-                        <h1>Tableau</h1>
-                        <h4>Visualising + Complex interactions</h4>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/icons/icon-sql.png" alt="SQL">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>SQL</h3>
+                            <p>Relational Database Design + Window Functions</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flip-card icon-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/icons/icon-data-visualisation.png" alt="Data Visualisation" loading="lazy"
-                            class="icon" />
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Data Visualisation</h1>
-                        <h4>RDBMS + Window Functions</h4>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/icons/icon-java.png" alt="Java">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Java</h3>
+                            <p>Object Oriented Programming</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flip-card icon-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/icons/icon-machine-learning.png" alt="Machine Learning" loading="lazy"
-                            class="icon" />
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/icons/icon-tableau.png" alt="Tableau">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Tableau</h3>
+                            <p>Visualising + Complex interactions</p>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
-                        <h1>Machine Learning</h1>
-                        <h4>Models, Training, Building</h4>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/icons/icon-data-visualisation.png" alt="Data Visualisation">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Data Visualisation</h3>
+                            <p>RDBMS + Window Functions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/icons/icon-machine-learning.png" alt="Machine Learning">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Machine Learning</h3>
+                            <p>Models, Training, Building</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects section -->
     <section class="projects" id="projects">
-        <h2 class="projects-title">My Recent Projects</h2>
+        <h2>My Recent Projects</h2>
         <div class="projects-container">
-            <div class="project-container project-card">
-                <img src="assets/images/warmerTomorrow.png" alt="Is it Warmer Tomorrow" loading="lazy"
-                    class="project-pic" />
-                <h3 class="project-title">Is it Warmer Tomorrow?</h3>
-                <h4 class="project-skills">Skills: R, Machine Learning, Data Wrangling</h4>
-                <p class="project-details">
-                    Watch me tackle Australia's weather data, with over 20 variables, in attempts to predict if we will
-                    burn or survive in the following day. Projects involves analysing 6 different models, i.e. Random
-                    Forest, ANN, and tuning the hyper-parameters of these models.
-                </p>
-                <a href="https://github.com/RyTang/Monash-Projects/tree/main/Data%20Analysis/Machine%20Learning"
-                    target="_blank" class="project-link">Check it Out</a>
-            </div>
-
-            <div class="project-container project-card">
-                <img src="assets/images/bestCountry.png" alt="Best Country to Live In?" loading="lazy"
-                    class="project-pic" />
-                <h3 class="project-title">Best Country to Live In?</h3>
-                <h4 class="project-skills">Skills: Python, HTML + CSS, Vega</h4>
-                <p class="project-details">
-                    Obtaining 5 different data sources from kaggle, watch the results of me manipulating, wrangling and
-                    visualising data to find out what countries are the most "desirable" to live in.
-                </p>
-                <a href="https://github.com/RyTang/Country-Project" target="_blank" class="project-link">View Github
-                    Code</a>
-                <br>
-                <a href="https://rytang.github.io/Country-Project/" target="_blank" class="project-link">View
-                    Website</a>
-            </div>
-
-            <div class="project-container project-card">
-                <img src="assets/images/calorieVisual.png" alt="What is a Calorie?" loading="lazy"
-                    class="project-pic" />
-                <h3 class="project-title">Calorie Visualisation</h3>
-                <h4 class="project-skills">Skills: Python, Tableau</h4>
-                <p class="project-details">
-                    We always understood the concept of calories in the back of our mind, but what does it actually
-                    mean? How many calories are there in a Single Pringle and how long will it take to burn it? If you
-                    do have these questions, this dashboard helps to answer some of those questions.
-                </p>
-                <a href="https://public.tableau.com/app/profile/ryan.tang5977/viz/Assignment1Visualisation_16612649518820/CalorieVisualisation"
-                    target="_blank" class="project-link">View on Tableau</a>
-
-            </div>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="assets/images/warmerTomorrow.png" alt="Is it Warmer Tomorrow">
+                        <h3>Is it Warmer Tomorrow</h3>
+                        <h4>Skills: R, Machine Learning, Data Wrangling</h4>
+                        <p>
+                            Watch me tackle Australia's weather data, with over 20 variables, in attempts to predict if
+                            we will
+                            burn or survive in the following day. Projects involves analysing 6 different models, i.e.
+                            Random
+                            Forest, ANN, and tuning the hyper-parameters of these models.
+                        </p>
+                        <a href="https://github.com/RyTang/Is-it-Warmer-Tomorrow" target="_blank"
+                            class="project-link">View
+                            Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/images/bestCountry.png" alt="Best Country to Live In?">
+                        <h3>Best Country to Live In?</h3>
+                        <h4>Skills: Python, HTML + CSS, Vega</h4>
+                        <p>Obtaining 5 different data sources from kaggle, watch the results of me manipulating,
+                            wrangling and
+                            visualising data to find out what countries are the most "desirable" to live in.</p>
+                        <a href="https://github.com/RyTang/Country-Project" target="_blank" class="project-link">View
+                            Github
+                            Code</a>
+                        <br>
+                        <a href="https://rytang.github.io/Country-Project/" target="_blank" class="project-link">View
+                            Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/images/calorieVisual.png" alt="What is a Calorie?">
+                        <h3>Calorie Visualisation</h3>
+                        <h4>Skills: Python, Tableau</h4>
+                        <p>We always understood the concept of calories in the back of our mind, but what does it actually
+                        mean? How many calories are there in a Single Pringle and how long will it take to burn it? If you
+                        do have these questions, this dashboard helps to answer some of those questions.</p>
+                        <a href="https://public.tableau.com/app/profile/ryan.tang5977/viz/Assignment1Visualisation_16612649518820/CalorieVisualisation"
+                            target="_blank" class="project-link">View on Tableau</a>
+                    </div>
+                </div>
         </div>
         <div class="projects-container">
             <div class="project-container project-card">
-                <img src="assets/images/Hamster-Rolling.gif" alt="Neslo's Escape" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Neslo's Escape</h3>
-                <h4 class="project-skills">Skills: C#, Unity</h4>
-                <p class="project-details">
+                <img src="assets/images/Hamster-Rolling.gif" alt="Neslo's Escape" />
+                <h3>Neslo's Escape</h3>
+                <h4>Skills: C#, Unity</h4>
+                <p>
                     <b>NESLO ESCAPED!!!</b>
                     <br>
                     This is a small tiny game regarding the adventures of my brother's hamster that never came back.
@@ -250,53 +252,55 @@
                 <a href="https://rytang.github.io/Neslos-Escape/" target="_blank" class="project-link">Play Game</a>
             </div>
             <div class="project-container project-card">
-                <img src="assets/images/animalClinic.png" alt="Animal Clinic" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Animal Clinic</h3>
-                <h4 class="project-skills">Skills: SQL, Oracle, RDBMS Design, Normalisation Process</h4>
-                <p class="project-details">
-                    Animal Clinic has requested to create a new relational database server in which they will like to integrate their previous form filling methods. Take a look at the process I used to design their database, and create it into a functional design.
+                <img src="assets/images/animalClinic.png" alt="Animal Clinic" />
+                <h3>Animal Clinic</h3>
+                <h4>Skills: SQL, Oracle, RDBMS Design, Normalisation Process</h4>
+                <p>
+                    Animal Clinic has requested to create a new relational database server in which they will like to
+                    integrate their previous form filling methods. Take a look at the process I used to design their
+                    database, and create it into a functional design.
                 </p>
-                <a href="https://github.com/RyTang/Monash-Projects/tree/main/Databases" target="_blank" class="project-link">View Github
+                <a href="https://github.com/RyTang/Monash-Projects/tree/main/Databases" target="_blank"
+                    class="project-link">View Github
                     Code</a>
                 <br>
             </div>
             <div class="project-container project-card">
-                <img src="assets/images/Playing Background.gif" alt="My Portfolio" loading="lazy" class="project-pic" />
-                <h3 class="project-title">My Portfolio Code</h3>
-                <h4 class="project-skills">Skills: HTML, CSS, JavaScript, GitHub</h4>
-                <p class="project-details">
-                    Of course, the main thing about this website is that it is completely built by me from scratch using HTML and CSS. It has been coded to work with devices of different dimensions, so that you are able to view this on your devices as well! Take a look at my code in the link below.
+                <img src="assets/images/Playing Background.gif" alt="My Portfolio" />
+                <h3>My Portfolio Code</h3>
+                <h4>Skills: HTML, CSS, JavaScript, GitHub</h4>
+                <p>
+                    Of course, the main thing about this website is that it is completely built by me from scratch using
+                    HTML and CSS. It has been coded to work with devices of different dimensions, so that you are able
+                    to view this on your devices as well! Take a look at my code in the link below.
                 </p>
                 <a href="https://github.com/RyTang/Portfolio" target="_blank" class="project-link">View Github
                     Code</a>
                 <br>
             </div>
         </div>
-
     </section>
 
-    <!-- Resume Section -->
     <section class="resume" id="resume">
-        <h2>My Resumé</h2>
-        <iframe src="assets/pdfs/Resume.pdf" frameborder="0" class="resume"></iframe>
+        <div class="container">
+            <h2>My Resumé</h2>
+            <iframe src="assets/pdfs/Resume.pdf" frameborder="0"></iframe>
+        </div>
     </section>
 
-    <!-- Social accounts -->
     <div class="socials">
         <a href="https://www.linkedin.com/in/ryan-lj-tang/" target="_blank">
-            <img src="assets/icons/icons8-linkedin.png" alt="LinkedIn" loading="lazy" class="socicon" />
+            <img src="assets/icons/icons8-linkedin.png" alt="LinkedIn">
         </a>
         <a href="https://github.com/RyTang" target="_blank">
-            <img src="assets/icons/icons8-github-48.png" alt="Github" loading="lazy" class="socicon" />
+            <img src="assets/icons/icons8-github-48.png" alt="Github">
         </a>
     </div>
 
-    <!-- Scroll to top -->
     <i class="scroll-up" id="scroll-up">
-        <img src="assets/icons/arrow-up.png" class="socicon up-arrow" alt="scroll-up" />
+        <img src="assets/icons/arrow-up.png" alt="scroll-up">
     </i>
 
-    <!-- Footer section -->
     <footer>
         <p class="copy">
             Built by Ryan Tang
@@ -309,6 +313,22 @@
     <!-- Ion icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 
 </html>
