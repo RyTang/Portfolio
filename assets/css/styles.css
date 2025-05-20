@@ -178,6 +178,11 @@
                 margin: 25px 0; /* Increased margin */
             }
 
+            nav h1 {
+                margin: 0;
+                font-size: 2rem; /* Larger heading */
+            }
+
             .hamburger-lines {
                 display: flex;
             }
