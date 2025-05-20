@@ -306,12 +306,24 @@
         }
 
         .tab-contents {
-            display: none;
             text-align: left; /* Re-align tab content to left */
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            visibility: hidden;
+            pointer-events: none;
         }
 
         .tab-contents.active-tab {
-            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            pointer-events: auto;
+            position: relative;
         }
 
         .tab-contents ul {
