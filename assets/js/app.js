@@ -57,7 +57,6 @@ function opentab(tabName, isAuto = false) {
 
 function rotatetab(){
     if (pauseOnInteraction) {
-        console.log("Paused on Interaction");
         return;
     }
     var currentIndex = 0;
@@ -71,7 +70,6 @@ function rotatetab(){
     }
     const wantedIndex = (currentIndex + 1) % tablinks.length
     opentab(tabcontents[wantedIndex].id, true);
-    console.log("Rotating")
 }
 
 
