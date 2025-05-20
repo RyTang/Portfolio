@@ -42,14 +42,16 @@
 
     <section class="hero" id="about">
         <div class="container">
-            <img src="assets/images/Playing Background.gif" alt="Ryan Tang" class="hero-image" style="width: 100%; height: auto;">
+            <img src="assets/images/Playing Background.gif" alt="Ryan Tang" class="hero-image"
+                style="width: 100%; height: auto;">
             <div class="bio animate__animated animate__shakeX">
                 <h2 class="bio-title">About Me</h2>
                 <p class="bio-text">
-                    Hi, I'm Ryan Tang, an experienced Data Scientist from Malaysia. I graduated from Monash University, taking a Bachelor's Degree of Computer Science in Data
+                    Hi, I'm Ryan Tang, an experienced Data Scientist from Malaysia. I graduated from Monash University,
+                    taking a Bachelor's Degree of Computer Science in Data
                     Science. Coming from a Data background, I am always keen on finding ways to express information in a
-                    way that is easily understandable to the audience. This extends not only to my data projects but as well
-                    to teaching the fundamental concepts of Object-Oriented Programming in my part-time tutoring.
+                    way that is easily understandable to the audience. This extends not only to my data projects but as
+                    well to teaching the fundamental concepts of Object-Oriented Programming in my part-time tutoring.
                 </p>
                 <p class="bio-text">
                     <em>Feel free to look at my projects below and get to know me.</em>
@@ -64,28 +66,34 @@
             <div class="more-about-row">
                 <div class="about-col-1">
                     <div class="tab-titles">
-                        <h3 class="tab-links active-link" onclick="opentab('skills')">Skills</h3>
-                        <h3 class="tab-links" onclick="opentab('experience')">Experience</h3>
-                        <h3 class="tab-links" onclick="opentab('education')">Education</h3>
-                        <h3 class="tab-links" onclick="opentab('certificate')">Certifications</h3>
+                        <h3 class="tab-links active-link" id="skills_tab" onclick="opentab('skills')">Skills</h3>
+                        <h3 class="tab-links" id="experience_tab" onclick="opentab('experience')">Experience</h3>
+                        <h3 class="tab-links" id="education_tab" onclick="opentab('education')">Education</h3>
+                        <h3 class="tab-links" id="certificate_tab" onclick="opentab('certificate')">Certifications</h3>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span><br>Python, Java, C#, HTML & CSS</li>
-                            <li><span>Machine Learning Models</span><br>Using R, Python and Matlab</li>
-                            <li><span>Data Visualisation</span><br>Python (Pandas), R, Tableau and Vega</li>
+                            <li><span>Programming Languages</span><br>Python, Java, C#, Javascript, HTML & CSS</li>
+                            <li><span>Cloud Knowledge</span><br>AWS (Certified), Google</li>
+                            <li><span>Data Visualisation</span><br>Superset, Looker Studio <i>(formally Google Data
+                                    Studio)</i>, Tableau, Python, R, Vega</li>
                             <li><span>Database Management</span><br>PySpark, SQL, RDBMS Design, NoSQL and MongoDB</li>
-                            <li><span>Game Development</span><br>Unity and C#</li>
+                            <li><span>Machine Learning Models</span><br>Using R, Python and Matlab</li>
+                            <li><span>Game Development (Hobby)</span><br>Unity and C#</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022-08 - 2022-11</span><br><em>Selangor, Malaysia</em><br>Tutor Assistant at
-                                Monash
-                                University<br>Module: Object Oriented Design and Implementation</li>
+                            <li><span>2023-06 - present</span><br><em>Kuala Lumpur, Malaysia</em><br>Data Scientist
+                                at
+                                Involve Asia</li>
                             <li><span>2021-11 - 2022-02</span><br><em>Kuala Lumpur, Malaysia</em><br>Data Analyst Intern
                                 at
                                 Setel</li>
+                            <li><span>2022-08 - 2022-11</span><br><em>Selangor, Malaysia</em><br>Tutor Assistant at
+                                Monash
+                                University<br>Module: Object Oriented Design and Implementation</li>
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -99,8 +107,10 @@
                     </div>
                     <div class="tab-contents" id="certificate">
                         <ul>
-                            <li><span>2025</span><br><em>AWS Solutions Architect - Associate</em><br>Amazon Web Services (AWS)<br><a
-                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential/311f11dbf1594d0c945b9684c61b0410" target="_blank">View
+                            <li><span>2025</span><br><em>AWS Solutions Architect - Associate</em><br>Amazon Web Services
+                                (AWS)<br><a
+                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential/311f11dbf1594d0c945b9684c61b0410"
+                                    target="_blank">View
                                     Certificate</a></li>
                             <li><span>2023</span><br><em>Google Data Analytics Certificate</em><br>Coursera<br><a
                                     href="https://www.credly.com/badges/47bf56e0-445c-4caf-be8c-2632d099e5ce/public_url"
@@ -193,47 +203,47 @@
     <section class="projects" id="projects">
         <h2>My Recent Projects</h2>
         <div class="projects-container">
-                <div class="projects-container">
-                    <div class="project-card">
-                        <img src="assets/images/warmerTomorrow.png" alt="Is it Warmer Tomorrow">
-                        <h3>Is it Warmer Tomorrow</h3>
-                        <h4>Skills: R, Machine Learning, Data Wrangling</h4>
-                        <p>
-                            Watch me tackle Australia's weather data, with over 20 variables, in attempts to predict if
-                            we will
-                            burn or survive in the following day. Projects involves analysing 6 different models, i.e.
-                            Random
-                            Forest, ANN, and tuning the hyper-parameters of these models.
-                        </p>
-                        <a href="https://github.com/RyTang/Is-it-Warmer-Tomorrow" target="_blank"
-                            class="project-link">View
-                            Project</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/bestCountry.png" alt="Best Country to Live In?">
-                        <h3>Best Country to Live In?</h3>
-                        <h4>Skills: Python, HTML + CSS, Vega</h4>
-                        <p>Obtaining 5 different data sources from kaggle, watch the results of me manipulating,
-                            wrangling and
-                            visualising data to find out what countries are the most "desirable" to live in.</p>
-                        <a href="https://github.com/RyTang/Country-Project" target="_blank" class="project-link">View
-                            Github
-                            Code</a>
-                        <br>
-                        <a href="https://rytang.github.io/Country-Project/" target="_blank" class="project-link">View
-                            Project</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/calorieVisual.png" alt="What is a Calorie?">
-                        <h3>Calorie Visualisation</h3>
-                        <h4>Skills: Python, Tableau</h4>
-                        <p>We always understood the concept of calories in the back of our mind, but what does it actually
-                        mean? How many calories are there in a Single Pringle and how long will it take to burn it? If you
-                        do have these questions, this dashboard helps to answer some of those questions.</p>
-                        <a href="https://public.tableau.com/app/profile/ryan.tang5977/viz/Assignment1Visualisation_16612649518820/CalorieVisualisation"
-                            target="_blank" class="project-link">View on Tableau</a>
-                    </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="assets/images/warmerTomorrow.png" alt="Is it Warmer Tomorrow">
+                    <h3>Is it Warmer Tomorrow</h3>
+                    <h4>Skills: R, Machine Learning, Data Wrangling</h4>
+                    <p>
+                        Watch me tackle Australia's weather data, with over 20 variables, in attempts to predict if
+                        we will
+                        burn or survive in the following day. Projects involves analysing 6 different models, i.e.
+                        Random
+                        Forest, ANN, and tuning the hyper-parameters of these models.
+                    </p>
+                    <a href="https://github.com/RyTang/Is-it-Warmer-Tomorrow" target="_blank" class="project-link">View
+                        Project</a>
                 </div>
+                <div class="project-card">
+                    <img src="assets/images/bestCountry.png" alt="Best Country to Live In?">
+                    <h3>Best Country to Live In?</h3>
+                    <h4>Skills: Python, HTML + CSS, Vega</h4>
+                    <p>Obtaining 5 different data sources from kaggle, watch the results of me manipulating,
+                        wrangling and
+                        visualising data to find out what countries are the most "desirable" to live in.</p>
+                    <a href="https://github.com/RyTang/Country-Project" target="_blank" class="project-link">View
+                        Github
+                        Code</a>
+                    <br>
+                    <a href="https://rytang.github.io/Country-Project/" target="_blank" class="project-link">View
+                        Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/calorieVisual.png" alt="What is a Calorie?">
+                    <h3>Calorie Visualisation</h3>
+                    <h4>Skills: Python, Tableau</h4>
+                    <p>We always understood the concept of calories in the back of our mind, but what does it actually
+                        mean? How many calories are there in a Single Pringle and how long will it take to burn it? If
+                        you
+                        do have these questions, this dashboard helps to answer some of those questions.</p>
+                    <a href="https://public.tableau.com/app/profile/ryan.tang5977/viz/Assignment1Visualisation_16612649518820/CalorieVisualisation"
+                        target="_blank" class="project-link">View on Tableau</a>
+                </div>
+            </div>
         </div>
         <div class="projects-container">
             <div class="project-container project-card">

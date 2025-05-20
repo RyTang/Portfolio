@@ -30,13 +30,49 @@ navLink.forEach((link) =>
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
-    for (tablink of tablinks) {
+var currentTab;
+let pauseOnInteraction = false;
+let rotationTimer = null;
+
+function opentab(tabName, isAuto = false) {
+    for (var tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
-    for (tabcontent of tabcontents) {
+    for (var tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+    console.log(tabName + "_tab")
+    document.getElementById(tabName + "_tab").classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+
+    currentTab = tabName;
+    if (!pauseOnInteraction & !isAuto) {
+        pauseOnInteraction = true;
+        clearInterval(rotationTimer);
+        setTimeout(() => {
+            pauseOnInteraction = false;
+        }, 15000); // 15 seconds
+    }
 }
+
+function rotatetab(){
+    if (pauseOnInteraction) {
+        console.log("Paused on Interaction");
+        return;
+    }
+    var currentIndex = 0;
+    if (currentTab){
+            for (var tabcontent of tabcontents){
+            if (tabcontent.id === currentTab) {
+                break;
+            }
+            currentIndex++;
+        }
+    }
+    const wantedIndex = (currentIndex + 1) % tablinks.length
+    opentab(tabcontents[wantedIndex].id, true);
+    console.log("Rotating")
+}
+
+
+setInterval(rotatetab, 5000)
