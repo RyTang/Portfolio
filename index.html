@@ -6,16 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
     <link rel="icon" href="assets/icons/tab-icon.png" />
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <!-- Animate CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Ryan Tang</title>
@@ -55,6 +52,7 @@
                 </p>
                 <p class="bio-text">
                     <em>Feel free to look at my projects below and get to know me.</em>
+                    <em>If you happen to have any questions or will like to know more about me, feel free to drop me a message on LinkedIn!</em>
                 </p>
             </div>
         </div>
@@ -84,7 +82,7 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2023-06 - present</span><br><em>Kuala Lumpur, Malaysia</em><br>Data Scientist
+                            <li><span>2023-06 - Present</span><br><em>Kuala Lumpur, Malaysia</em><br>Data Scientist
                                 at
                                 Involve Asia</li>
                             <li><span>2021-11 - 2022-02</span><br><em>Kuala Lumpur, Malaysia</em><br>Data Analyst Intern
@@ -103,6 +101,7 @@
                                 Data Science <br>GPA: 3.83/4.00</li>
                             <li><span>2018-2019</span><br><em>Sunway College</em><br>Cambridge Advanced Level<br>GPA:
                                 4.00/4.00</li>
+                            <li><span>Before-2018</span><br><em>Tenby International School</em><br>International General Certificate of Secondary Education<br>Grades: 7A*'s, 2A's, 2B's</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="certificate">
@@ -136,8 +135,21 @@
                             <img src="assets/icons/icon-python.png" alt="Python">
                         </div>
                         <div class="flip-card-back">
-                            <h3>Python</h3>
+                            <h4>Python</h4>
                             <p>OOP, Pandas, Polars, Pyspark, Data Pipeline</p>
+                            <p>3+ Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/icons/icon-analysis.png" alt="Hypothesis Testing (A/B Testing)">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Statistical Analysis</h3>
+                            <p>Hypothesis Testing, Causation Analysis</p>
+                            <p>3+ Years of Experience</p>
                         </div>
                     </div>
                 </div>
@@ -149,6 +161,7 @@
                         <div class="flip-card-back">
                             <h3>SQL</h3>
                             <p>Relational Database Design + Window Functions</p>
+                            <p>3+ Years of Experience</p>
                         </div>
                     </div>
                 </div>
@@ -166,6 +179,17 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
+                            <img src="assets/icons/icon-superset.png" alt="Superset">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Superset</h3>
+                            <p>Integration & Visualisation.<br>Contributed and extended a Custom Implementation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
                             <img src="assets/icons/icon-tableau.png" alt="Tableau">
                         </div>
                         <div class="flip-card-back">
@@ -177,22 +201,11 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="assets/icons/icon-data-visualisation.png" alt="Data Visualisation">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Data Visualisation</h3>
-                            <p>RDBMS + Window Functions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
                             <img src="assets/icons/icon-machine-learning.png" alt="Machine Learning">
                         </div>
                         <div class="flip-card-back">
                             <h3>Machine Learning</h3>
-                            <p>Models, Training, Building</p>
+                            <p>Large Models, Training, Building</p>
                         </div>
                     </div>
                 </div>
@@ -281,7 +294,7 @@
                 <h4>Skills: HTML, CSS, JavaScript, GitHub</h4>
                 <p>
                     Of course, the main thing about this website is that it is completely built by me from scratch using
-                    HTML and CSS. It has been coded to work with devices of different dimensions, so that you are able
+                    HTML and CSS. If you have a keen eye you would have noticed that this was hosted on Github. It has been coded to work with devices of different dimensions, so that you are able
                     to view this on your devices as well! Take a look at my code in the link below.
                 </p>
                 <a href="https://github.com/RyTang/Portfolio" target="_blank" class="project-link">View Github
@@ -323,22 +336,6 @@
     <!-- Ion icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
-    </script>
 </body>
 
 </html>
