@@ -41,7 +41,6 @@ function opentab(tabName, isAuto = false) {
     for (var tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
-    console.log(tabName + "_tab")
     document.getElementById(tabName + "_tab").classList.add("active-link");
     document.getElementById(tabName).classList.add("active-tab");
 
