@@ -444,8 +444,9 @@
                 max-width: 350px; /* Increased max-width */
                 margin: 30px 0; /* Increased margin */
             }
-             .skills-wrapper {
-                gap: 50px;
+
+            .skills-wrapper {
+                gap: 0px;
             }
         }
 
